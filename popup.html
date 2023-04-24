@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notinger</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="popup-container">
+      <h1>Notinger</h1>
+      <span id="description">Timesaving minimalistic notesmaking!</span>
+      <span id="credits">Programmed by @asifnawazcharan</span>
+      
+      <form id="my-form">
+        <div>
+          <label for="subject-input">Subject:</label>
+          <input type="text" id="subject-input" required>
+        </div>
+        <div>
+          <label for="content-input">Note:</label>
+          <textarea id="content-input" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Note it!</button>
+        </div>
+      </form>
+
+
+      <label id="message"></label> 
+        <div>
+        <label id="readnotes" for="columns-dropdown">Read Your Notes: </label>
+        <select id="columns-dropdown">
+        </select>
+      </div>
+    </span>
+      
+      <table id="notestable">
+        <thead>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+
+      <table id="logstable">
+        <thead>
+
+        </thead>
+        <tbody id="logstable-body">
+        </tbody>
+      </table>
+    </div>
+    
+    <script src="popup.js"></script>
+  </body>
+</html>
